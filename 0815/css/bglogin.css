@@ -1,0 +1,158 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font-family:"微软雅黑";
+}
+
+a:link , a:visited {
+	text-decoration:none;
+}
+
+.login-bigbox {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/bglogin.jpg);
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.head-box {
+	background-color: #212d3d;
+}
+
+.head-box-ico {
+	position: relative;
+	top: 10px;
+	left: 22px;
+}
+
+.head-ico {
+	width: 14px;
+    height: 14px;
+    background: url(../images/ico1.png)no-repeat;
+    background-position: -124px -68px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
+
+#index > a {
+	color: #fff!important;
+}
+
+.message-ico {
+	width: 40px;
+    height: 40px;
+    background: url(../images/ico1.png)no-repeat;
+    background-position: -114px -186px;
+    border-radius: 7px;
+    position: relative;
+    bottom: 4px;
+}
+
+.login-img {
+	width: 677px;
+    height: 309px;
+    background: url(../images/login-img2.png)no-repeat;
+}
+
+.login-ico {
+	width: 43px;
+    height: 46px;
+
+}
+
+.UserLogin {
+	font-size: 25px;
+	color: #40597b;
+}
+
+.UserLogin2 {
+	font-size: 12px;
+	color: #c3c5c6;
+}
+
+.login-account {
+	position: relative;
+    top: 30px;
+    left: 276px;
+}
+
+.input-account {
+	border-left: 0!important; 
+}
+
+.people-ico{
+	position: relative;
+    top: 15px;
+}
+
+.password-ico{
+	position: relative;
+    top: 15px;
+}
+
+.password {
+	border: 1px solid #4e6b92;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+
+.password2 {
+	border: 1px solid #4e6b92;
+    border-radius: 0 5px 5px 0;
+}
+
+.activation-box {
+    width: 343px;
+    position: relative;
+    top: 60px;
+    left: 92px;
+    display: inline-block;
+}
+
+.activation-login {
+	width: 111px;
+    height: 35px;
+    display: inline-block;
+    background-color: #40597b;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+.input-password {
+	position: relative;
+    top: 2px;
+    margin: 0 3px 0 0!important;
+} 
+
+.bottom {
+    width:100vw;
+	/* position: absolute; */
+    // top: 154px;
+    /* bottom:0; */
+    background-color: #3b495c;
+}
+
+
+/*修改密码*/
+.change-password {
+	position: relative;
+    top: 20px;
+    left: 276px;
+}
+
+.activation-password{
+	width: 343px;
+    position: relative;
+    top: 41px;
+    left: 60px;
+    display: inline-block;
+}
+
+

@@ -1,0 +1,61 @@
+body {
+
+
+}
+.title {
+    background: #00843E;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.option {
+    padding: 10px 0px 10px 30px;
+}
+
+.option > div {
+    width: 20%;
+}
+
+.click, .click2,.click3, .click4, .click5 {
+	color: #000;
+    background-color: #eee;
+    border-color: #ccc;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.click:hover, .click2:hover,.click3:hover, .click4:hover, .click5:hover {
+    color: #fff;
+    background-color: #00843E;
+    border-color: #00843E;
+}
+
+.active {
+	color: #fff;
+    background-color: #00843E;
+    border-color: #00843E;
+}
+
+
+/*时间选取*/
+.datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #00843E !important;
+}
+.datetimepicker table tr td.active, .datetimepicker table tr td.active:hover, .datetimepicker table tr td.active.disabled, .datetimepicker table tr td.active.disabled:hover{
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00843E), to(#00843E)) !important;
+}
+
+.pd-30{
+    padding: 10px 30px;
+}
+
+
+.min-w522 {
+    min-width: 522px;
+}

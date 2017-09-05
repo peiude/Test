@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html class=" js csstransforms3d"><head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>公共侧边栏</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<!--[if lte IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css"/>
+	<![endif]-->
+	<script type="text/javascript" src="../js/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/modernizr.js"></script>
+	<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+	<style>	
+       .div1 {
+		display: none;
+		text-align: center;
+	}
+    </style>
+</head>
+
+<body>
+	<!--side S-->
+	<div class="super-side-menu">
+		<div class="logo"></div>
+		
+		<div class="side-menu">
+			<ul>
+				<li class="on"><a href="ckqb.html" target="Mainindex"><i class="ico-1"></i>用户管理</a></li>
+				<li class=""><a href="Line-diagram.html" target="Mainindex"><i class="ico-1"></i>管理中心</a></li>
+				<li class="xial"><a href="javascript:;" target="Mainindex"><i class="ico-3"></i>审核管理</a>
+                  <div class="div1">
+                  	    <p><a href="sh.html" target="Mainindex">未审核</a></p>
+						<p><a href="ys.html" target="Mainindex">已通过</a></p>
+						<p><a href="ysjj.html" target="Mainindex">已拒绝</a></p>
+					</div>
+				</li>
+				<li class=""><a href="quanxian.html" target="Mainindex"><i class="ico-3"></i>权限管理</a></li>
+				<li class=""><a href="ktqyzh.html" target="Mainindex"><i class="ico-3"></i>企业账号</a></li>
+				<li class=""><a href="ktqygrzh.html" target="Mainindex"><i class="ico-3"></i>个人账号</a></li>
+				<li class=""><a href="ktqygrqy.html" target="Mainindex"><i class="ico-3"></i>QY新增账号</a></li>
+				<li class=""><a href="qyddgl.html" target="Mainindex"><i class="ico-3"></i>QY订单管理</a></li>
+				<li class=""><a href="chakangengduo.html" target="Mainindex"><i class="ico-3"></i>QY更多订单</a></li>
+				<li class=""><a href="grzx.html" target="Mainindex"><i class="ico-3"></i>GR个人中心</a></li>
+				<li><a href="index1.html" target="_parent"><i class="ico-4"></i>安全退出</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--side E-->
+
+<script type="text/javascript">
+	$(function(){
+		$('.side-menu li').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		})
+	})
+</script>
+<script>
+			$(document).ready(function() {
+				//绑定元素点击事件
+				$(".xial ").click(function() {
+					//判断对象是显示还是隐藏
+					if($(this).children(".div1 ").is(":hidden ")) {
+						//表示隐藏
+						if(!$(this).children(".div1 ").is(":animated ")) {
+							//						$(this).children(".xiala ").css({'transform':'rotate(180deg)'}); 
+							//如果当前没有进行动画，则添加新动画
+							$(this).children(".div1 ").animate({
+									height: 'show'
+								}, 500)
+								//siblings遍历div1的元素
+								.end().siblings().find(".div1 ").hide(500);
+						}
+					} else {
+						//表示显示
+						if(!$(this).children(".div1 ").is(":animated ")) {
+							//						$(this).children(".xiala ").css({'transform':'rotate(360deg)'});  
+							$(this).children(".div1 ").animate({
+									height: 'hide'
+								}, 500)
+								.end().siblings().find(".div1 ").hide(500);
+						}
+					}
+				});
+
+				//阻止事件冒泡，子元素不再继承父元素的点击事件
+				$('.div1').click(function(e) {
+					e.stopPropagation();
+				});
+
+				//点击子菜单为子菜单添加样式，并移除所有其他子菜单样式
+				$(".zcd ").click(function() {
+					//设置当前菜单为选中状态的样式，并移除同类同级别的其他元素的样式
+					//				$(this).addClass("removes ").siblings().removeClass("removes ");
+					//遍历获取所有父菜单元素
+					$(".div1 ").each(function() {
+						//判断当前的父菜单是否是隐藏状态
+						if($(this).is(":hidden ")) {
+							//如果是隐藏状态则移除其样式
+							$(this).children(".zcd ").removeClass("removes ");
+						}
+					});
+				});
+			});
+		</script>
+</body></html>

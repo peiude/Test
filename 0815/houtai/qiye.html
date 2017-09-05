@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>后台</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/chakan.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<script src="../js/jquery-3.0.0.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<link href="../css/bootstrap-datetimepicker.css" rel="stylesheet">
+</head>
+<body>
+<!--content S-->
+	<div class="super-content RightMain" id="RightMain">
+		<div class="ctab-title clearfix"><h3>用户管理</h3></div>
+		<!--header-->
+		<div class="superCtab">
+			
+			<div class="ctab-Main">
+				<div class="ctab-Main-title">
+					<ul class="clearfix">
+						<li ><a href="ckqb.html">全部</a></li>
+						<li ><a href="geren.html">个人</a></li>
+						<li class="cur"><a href="qiye.html">企业</a></li>
+					</ul>
+				</div>
+				<div class="ctab-Mian-cont">
+					<div class="Mian-cont-wrap">
+						<div class="defaultTab-T">
+						   <table class="table" style="width:100%;">
+						   		<div class="btn-group btn-div">
+						   			<button type="button" class="btn btn-default dropdown-toggle float-n border0 pdlr8" data-toggle="dropdown">排序 
+										<span class="caret"></span>
+									</button>
+									<ul style="background-color:#f8f8f8 " class="dropdown-menu left15 float-n" role="menu">
+										<li><a href="#"> A-Z顺序</a></li>
+										<li><a href="#"> Z-A倒叙</a></li>
+									</ul>
+								</div>
+								<div class="btn-group btn-div">
+						   			<button type="button" class="form_datetime btn btn-default dropdown-toggle float-n border0 pdlr8" data-toggle="dropdown">时间 
+										<span class="caret"></span>
+									</button>
+									<ul style="background-color:#f8f8f8 " class="dropdown-menu left15 float-n" role="menu">
+										<li><a href="#">顺序</a></li>
+										<li><a href="#">倒叙</a></li>
+									</ul>
+								</div>
+								<div class="btn-group btn-div">
+						   			<button type="button" class="btn btn-default dropdown-toggle float-n border0 pdlr8" data-toggle="dropdown">所属 
+										<span class="caret"></span>
+									</button>
+									<ul style="background-color:#f8f8f8 " class="dropdown-menu left15 float-n" role="menu">
+										<li><a href="#">网易</a></li>
+										<li><a href="#">个人</a></li>
+										<li><a href="#">腾讯</a></li>
+										<li><a href="#">百度</a></li>
+										<li><a href="#">淘宝</a></li>
+										<li><a href="#">google</a></li>
+									</ul>
+								</div>
+								<div class="btn-group btn-div">
+						   			<button type="button" class="btn btn-default dropdown-toggle float-n border0 pdlr8" data-toggle="dropdown">状态 
+										<span class="caret"></span>
+									</button>
+									<ul style="background-color:#f8f8f8 " class="dropdown-menu left15 float-n" role="menu">
+										<li><a href="#">正常</a></li>
+										<li><a href="#">异常</a></li>
+									</ul>
+								</div>
+								<div class="btn-group btn-div">
+						   			<!-- <button type="button" class="btn btn-default dropdown-toggle float-n" data-toggle="dropdown">时间 
+											<span class="caret"></span>
+										</button>
+										<ul style="background-color:#f8f8f8 " class="dropdown-menu left15  float-n" role="menu">
+											<li><a href="#"> A-Z顺序</a></li>
+											<li><a href="#"> Z-A倒叙</a></li>
+										</ul> -->
+								</div>
+								<tr style="background-color:#f8f8f8 ">
+									<th>账号</th>
+									<th>注册时间</th>
+									<th>所属</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>晟源</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>
+								<tr>
+									<th>huang</th>
+									<th>2017-8-9</th>
+									<th>网易</th>
+									<th>正常</th>
+									<th><div class="btn pd0">
+										<a data-toggle="modal" data-target="#myModal">
+											查看
+										</a>
+										<a data-toggle="modal" data-target="#myModal1">
+											管理
+										</a>
+									</div>
+								</th>
+								</tr>	
+							</table>
+
+						<!--pages S-->
+						<div class="container text-center">
+							<ul class="pagination">
+							    <li><a href="#">&laquo;</a></li>
+							    <li><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+						<!--pages E-->
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		
+	</div>
+	<!--content E-->
+<!-- 按钮触发模态框 -->
+<!-- <table><th><div class="btn pd0">
+<a data-toggle="modal" data-target="#myModal">
+	开始演示模态框
+</a>
+</div></th></table> -->
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog" role="document" style="width:80%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" 
+						aria-hidden="true">×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					任我贷
+				</h4>
+			</div>
+			<div class="modal-body">
+				<table class="table">
+			       <caption style="text-align:left;font-size:15px;margin:10px 0">贷款详细</caption>
+					  <thead>
+					    <tr>
+					      <th>日期</th>
+					      <th>需求金额</th>
+					      <th>需求人姓名</th>
+					      <th>状态</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>2000</td>
+					      <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>20001</td>
+					       <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>20001</td>
+					       <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>20001</td>
+					       <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>20001</td>
+					       <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					    <tr>
+					      <td>2017/07/21</td>
+					      <td>20001</td>
+					       <td>黄小明</td>
+					      <td>通过</td>
+					    </tr>
+					  </tbody>
+					</table>
+			</div>
+			<div class="modal-footer" style="text-align:center">
+				<ul class="pagination">
+				    <li><a href="#">&laquo;</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 模态框（Modal） -->
+<div class="modal fade bs-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog" role="document" style="width:30%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" 
+						aria-hidden="true">×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					任我贷
+				</h4>
+			</div>
+<!-- 			<div class="modal-body">
+				
+			</div> -->
+			<div class="modal-footer" style="border-top:none;">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-warning">重置密码</button>
+		        <button type="button" class="btn btn-danger">封号</button>
+		        <button type="button" class="btn btn-success">解封</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+		<script src="../js/bootstrap-datetimepicker.js"></script>
+		<script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+		<script type="text/javascript">
+			$(".form_datetime").datetimepicker({
+			format: "yyyy-mm-dd",
+			autoclose: true,
+			todayBtn: true,
+			todayHighlight: true,
+			showMeridian: true,
+			pickerPosition: "bottom-left",
+			language: 'zh-CN',//中文，需要引用zh-CN.js包
+			startView: 2,//月视图
+			minView: 2//日期时间选择器所能够提供的最精确的时间选择视图
+			}); 
+		</script>
+</body>
+</html>

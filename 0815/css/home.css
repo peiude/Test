@@ -1,0 +1,106 @@
+@charset 'utf-8';
+* a{
+	text-decoration: none;
+}
+* a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+.zc tr{
+	display: block;
+	margin-top: 0.5rem;
+}
+.zc .loginTx{
+	width: 20rem;
+    height: 3rem;
+    padding: 0.6rem;
+    line-height: 3rem;
+    border: 0.1rem solid #ccc;
+    font-size: 1.2rem;
+}
+.zc tr td{
+	display: inline-block;
+	height: 4rem;
+	line-height: 4rem;
+
+}
+.zc tr td select{
+	display: inline-block;
+	width: 20rem;
+	height: 3rem;
+	line-height: 3rem;
+
+}
+.zc tr th{
+	width: 6.67rem;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: normal;
+
+	display: inline-block;
+	height: 4rem;
+	margin-right:1rem;
+	float: left;
+	line-height: 3rem;
+}
+.zc{
+	width: 42rem;
+	margin:0 auto;
+}
+.logintit{
+	font-size:1.5rem;
+	padding-top: 1.67rem;
+	padding-bottom: 1.67rem;
+	// text-align: center;
+}
+
+.zcan{
+	width: 12.42rem;
+    height: 3rem;
+    text-align: center;
+    display: inline-block;
+    line-height: 2.58rem;
+    background: rgba(191,173,111, 0.6);
+    border: 0rem;
+    font-size: 1.3rem;
+    color: #FFF;
+    cursor: pointer;
+    margin:10px auto;
+}
+.zcan1{
+	width: 12.42rem;
+    height: 3rem;
+    text-align: center;
+    display: block;
+    line-height: 2.58rem;
+    background: rgba(191,173,111, 0.6);
+    border: 0rem;
+    font-size: 1.3rem;
+    color: #FFF;
+    cursor: pointer;
+    margin:10px auto;
+}
+.middle{
+	width: 82.5rem;
+	height: calc(100% - 100px);
+	margin:0 auto;
+}
+.mleft{
+	width: 44.5rem;
+	height: auto;
+    float: left;
+    // margin:0 auto;
+}
+.mright{
+	width: 38rem;
+	 height: auto;
+	float: left;
+}
+.mright img{
+	width: 25rem;
+	height:32rem;
+	 margin-top:3rem;
+}
+#df_rigster{
+	
+}

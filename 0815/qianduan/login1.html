@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>任我贷</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="../images/logo.PNG" alt="logo">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">基本版</a></li>
+         <li><a href="#">English</a></li>
+          <li><a href="#">手机版</a></li>
+           <li><a href="#">联系我们</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="cont">
+         <form id="reg" class=" container ddd"  action="huanying.html">
+         	<div class="row" style="margin-top:9rem;">
+		         <ol class="reg_error">
+		    	   </ol>
+           </div>
+	        <div class="row">
+	          <div class="col-md-12" >
+	            <input type="text" placeholder="用户名" name="user"/>
+	          </div>
+	          <div class="col-md-12">
+	             <input type="password" placeholder="密码" name="pass" />
+	          </div>
+	        </div>
+	        <button class="login__submit" type="submit">登录</button>
+	        <p class="login__signup" style="margin-bottom:120px">你还没有账号? 马上去&nbsp;<a class="zc" href="zhuce.html">注册</a></p>
+      </form>
+    </div>
+    <div class="foot">
+       <p style="text-align:center;font-size:15px;"><a href="">关于贷款</a><span>|</span><a href="">服务条款</a><span>|</span><a href="">客服中心</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">帮助中心</a><span>|</span>©1998 - 2017 renwodai Inc. All Rights Reserved.</p>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.0.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.js"></script>
+    <script>
+    $(document).ready(function(){
+          var a = $(window).height();
+           var b = a-100;
+           if(b<570){
+              $(".cont").css("height",570);
+            }else{
+              $(".cont").css("height",b);
+            }
+    });    
+    </script>
+    <script>
+    $(document).ready(function(){
+         $("#reg").validate({
+         	// showErrors : function(errorMap,errorList){
+          //       this.defaultShowErrors();
+         	// },
+         	errorLabelContainer : 'ol.reg_error',
+             wrapper : 'li',
+         	rules:{
+                user:{
+                	required : true,
+                },
+               pass:{
+                    required : true,
+               },
+         	},
+         	messages : {
+                 user:{
+                	required : '账号不得为空',
+                },
+                pass:{
+                	required : '密码不能为空',
+                },
+         	},
+         });
+    });    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>任我贷</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="../images/logo.PNG" alt="logo">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">基本版</a></li>
+         <li><a href="#">English</a></li>
+          <li><a href="#">手机版</a></li>
+           <li><a href="#">联系我们</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="cont">
+         <div class=" container ddd">
+        <div class="row">
+          <div class="col-md-12" style="margin-top:40px;">
+            <input type="text" placeholder="请输入手机号"/>
+          </div>
+          <div class="col-md-12">
+             <input type="password" placeholder="请输入密码"/>
+          </div>
+          <div class="col-md-12">
+            <input type="text" placeholder="请再次输入密码"/>
+          </div>
+          <div class="col-md-12 but" >
+            <input type="text" name="phoneCode" placeholder="请输入验证码" class="yz validate[required]"/>
+            <button type="button" id="btn" onclick="invokeSettime(this)">获取验证码</button>
+          </div>
+          <div class="col-md-12" >
+          	<input id="regit" name="registbox" type="checkbox" value="1"/>
+            <a href="javascript:void(0)" class="registerXY">我已阅读并同意《任我贷注册协议》</a>
+          </div>
+        </div>
+        <a href="" class="login__submit" style="margin-bottom:100px">同意协议并注册</a>
+      </div>
+    </div>
+    <div class="foot">
+       <p style="text-align:center;font-size:15px;"><a href="">关于贷款</a><span>|</span><a href="">服务条款</a><span>|</span><a href="">客服中心</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">帮助中心</a><span>|</span>©1998 - 2017 Tencent Inc. All Rights Reserved.</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.0.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript"> 
+
+      function invokeSettime(obj){
+          var countdown=60;
+          settime(obj);
+          function settime(obj) {
+              if (countdown == 0) {
+                  $(obj).attr("disabled",false);
+                  $(obj).html("获取验证码");
+                  countdown = 60;
+                  return;
+              } else {
+                  $(obj).attr("disabled",true);
+                  $(obj).html("(" + countdown + ") s 重新发送");
+                  countdown--;
+              }
+              setTimeout(function() {
+                          settime(obj) }
+                      ,1000)
+          }
+      }
+
+  // new invokeSettime("#btn");
+
+</script>
+  </body>
+</html>
